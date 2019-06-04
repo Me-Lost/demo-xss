@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Demo.Xss.MVC.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -10,21 +11,35 @@ namespace Demo.Xss.MVC.Controllers
     {
         public ActionResult Index()
         {
-            return View();
+            return View("Index");
         }
 
-        public ActionResult About()
+        //[ValidateInput(false)]
+        public ActionResult SaveIndexDto(Dto data)
         {
-            ViewBag.Message = "Your application description page.";
-
-            return View();
+            return View("Index", data);
         }
 
-        public ActionResult Contact()
+        public ActionResult Knockout()
         {
-            ViewBag.Message = "Your contact page.";
+            return View("Knockout");
+        }
 
-            return View();
+        //[ValidateInput(false)]
+        public ActionResult SaveKnockoutDto(Dto data)
+        {
+            return View("Knockout", data);
+        }
+
+        public ActionResult Angular()
+        {
+            return View("Angular");
+        }
+
+        //[ValidateInput(false)]
+        public ActionResult SaveAngularDto(Dto data)
+        {
+            return View("Angular", data);
         }
     }
 }

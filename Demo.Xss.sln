@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.Xss.MVC", "Demo.Xss.MV
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.Xss.Webforms", "Demo.Xss.Webforms\Demo.Xss.Webforms.csproj", "{14252F2A-C418-4679-B643-353DC2992480}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.Xss.Core.MVC", "Demo.Xss.Core.MVC\Demo.Xss.Core.MVC.csproj", "{8147151B-E641-45C2-8BA9-D1657BD02DAD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{14252F2A-C418-4679-B643-353DC2992480}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{14252F2A-C418-4679-B643-353DC2992480}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{14252F2A-C418-4679-B643-353DC2992480}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8147151B-E641-45C2-8BA9-D1657BD02DAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8147151B-E641-45C2-8BA9-D1657BD02DAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8147151B-E641-45C2-8BA9-D1657BD02DAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8147151B-E641-45C2-8BA9-D1657BD02DAD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

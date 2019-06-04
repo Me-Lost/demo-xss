@@ -9,14 +9,19 @@
     {
         <div class="form-group">
             @Html.LabelFor(Model => Model.Name)
-            @Html.TextBoxFor(Model => Model.Name);
+            @Html.TextBoxFor(Model => Model.Name)
         </div>
         <div class="form-group">
             @Html.LabelFor(Model => Model.Description)
-            @Html.TextBoxFor(Model => Model.Description);
+            @Html.TextBoxFor(Model => Model.Description)
+            <div>
+              @Html.Raw(@Model.Description)
+            </div>
         </div>
         <div>
             <button type="submit">Post</button>
         </div>
     }
 </div>
+
+@*<script>alert('XSS')</script>*@

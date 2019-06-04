@@ -11,12 +11,19 @@ namespace Demo.Xss.MVC.Controllers
     {
         public ActionResult Index()
         {
-            return View("Index");
+            Dto data = new Dto();
+            return View("Index", data);
         }
 
-        //[ValidateInput(false)]
+        [ValidateInput(false)]
         public ActionResult SaveIndexDto(Dto data)
         {
+            //data.Name = Server.HtmlEncode(data.Name);
+            //data.Description = Server.HtmlEncode(data.Description);
+
+            //data.Name = Server.HtmlDecode(data.Name);
+            //data.Description = Server.HtmlDecode(data.Description);
+
             return View("Index", data);
         }
 

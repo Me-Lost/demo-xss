@@ -8,9 +8,16 @@ namespace Demo.Xss.MVC.Models
 {
     public class Dto
     {
+        
         //[AllowHtml]
         public string Name { get; set; }
 
         public string Description { get; set; }
+
+        public Dto()
+        {
+            Name = string.Empty;
+            Description = string.Empty;
+        }
     }
 }

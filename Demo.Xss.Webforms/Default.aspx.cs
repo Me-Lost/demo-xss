@@ -14,8 +14,17 @@ namespace Demo.Xss.Webforms
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            
+            lblName.Text = TbName.Text.Trim();
+            LbDesc.Text = TbDesc.Text.Trim();
+            //lblName.Text = "";
+            //LbDesc.Text = "";
 
+        }
+
+        protected void BtnUpdate_Click(object sender, EventArgs e) 
+        {
+            lblName.Text = lblName.Text.Trim();
+            LbDesc.Text = TbDesc.Text.Trim();
         }
     }
 }

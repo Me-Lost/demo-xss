@@ -5,20 +5,30 @@
     <br />
     <div class="container-fluid">
         <br />
-        @using (@Html.BeginForm("SaveIndexDto", "Home", FormMethod.Post))
-    {
+
         <div class="form-group">
-            @Html.LabelFor(Model => Model.Name)
-            @Html.TextBoxFor(Model => Model.Name);
+            <asp:TextBox runat="server" ID="TbName">
+
+            </asp:TextBox>
+            <asp:Label ID="lblName" runat="server">
+
+            </asp:Label>
         </div>
         <div class="form-group">
-            @Html.LabelFor(Model => Model.Description)
-            @Html.TextBoxFor(Model => Model.Description);
+            <asp:TextBox runat="server" ID="TbDesc">
+
+            </asp:TextBox>
+            <asp:Label ID="LbDesc" runat="server">
+
+            </asp:Label>
         </div>
+
         <div>
-            <button type="submit">Post</button>
+            <asp:Button id="BtnUpdate" onserverclick="BtnUpdate_Click" runat="server" Text="Update">
+
+            </asp:Button>
         </div>
-        }
+
     </div>
 
 </asp:Content>
